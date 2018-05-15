@@ -2,6 +2,8 @@
 
 ## Elevator Control System
 
+[![Build Status](https://travis-ci.com/MuteBardTison/MesosphereChallenge.svg?token=b3pst8GT2LqaGM7PGuYV&branch=master)](https://travis-ci.com/MuteBardTison/MesosphereChallenge)
+
 ### Deployment
 
 **CMake**
