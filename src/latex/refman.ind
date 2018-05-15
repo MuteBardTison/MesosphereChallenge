@@ -1,0 +1,60 @@
+\begin{theindex}
+
+  \item {Elevator}, \hyperpage{5}
+    \subitem {Elevator}, \hyperpage{5}
+    \subitem {Get\+Current\+Floor}, \hyperpage{6}
+    \subitem {Get\+Status}, \hyperpage{6}
+    \subitem {Is\+Down}, \hyperpage{6}
+    \subitem {Is\+Idle}, \hyperpage{7}
+    \subitem {Is\+Up}, \hyperpage{7}
+    \subitem {Set\+Current\+Goal}, \hyperpage{7}
+    \subitem {Set\+Pickup\+Goal}, \hyperpage{8}
+    \subitem {Set\+State}, \hyperpage{8}
+  \item {Elevator.\+cc}, \hyperpage{11}
+  \item {Elevator.\+h}, \hyperpage{11}
+
+  \indexspace
+
+  \item {Get\+Current\+Floor}
+    \subitem {Elevator}, \hyperpage{6}
+  \item {Get\+Status}
+    \subitem {Elevator}, \hyperpage{6}
+
+  \indexspace
+
+  \item {Is\+Down}
+    \subitem {Elevator}, \hyperpage{6}
+  \item {Is\+Idle}
+    \subitem {Elevator}, \hyperpage{7}
+  \item {Is\+Up}
+    \subitem {Elevator}, \hyperpage{7}
+
+  \indexspace
+
+  \item {Pickup}
+    \subitem {Simulation}, \hyperpage{9}
+
+  \indexspace
+
+  \item {Set\+Current\+Goal}
+    \subitem {Elevator}, \hyperpage{7}
+  \item {Set\+Pickup\+Goal}
+    \subitem {Elevator}, \hyperpage{8}
+  \item {Set\+State}
+    \subitem {Elevator}, \hyperpage{8}
+  \item {Simulation}, \hyperpage{8}
+    \subitem {Pickup}, \hyperpage{9}
+    \subitem {Simulation}, \hyperpage{9}
+    \subitem {Status}, \hyperpage{9}
+    \subitem {Update}, \hyperpage{10}
+  \item {Simulation.\+cc}, \hyperpage{12}
+  \item {Simulation.\+h}, \hyperpage{13}
+  \item {Status}
+    \subitem {Simulation}, \hyperpage{9}
+
+  \indexspace
+
+  \item {Update}
+    \subitem {Simulation}, \hyperpage{10}
+
+\end{theindex}

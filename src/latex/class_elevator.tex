@@ -1,0 +1,186 @@
+\hypertarget{class_elevator}{}\section{Elevator Class Reference}
+\label{class_elevator}\index{Elevator@{Elevator}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_elevator_acfb8a789116c1748f69633bbd07674db}\label{class_elevator_acfb8a789116c1748f69633bbd07674db}} 
+enum {\bfseries State} \{ {\bfseries k\+Up} = 1, 
+{\bfseries k\+Down} = -\/1, 
+{\bfseries k\+Idle} = 0
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_elevator_aa8a3857a468b3903c6f72032dd73c302}{Elevator}} (int elevator\+\_\+id, int story\+\_\+number)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_elevator}{Elevator}}. \end{DoxyCompactList}\item 
+std\+::tuple$<$ int, int, std\+::set$<$ int $>$, std\+::set$<$ int, std\+::greater$<$ int $>$ $>$ $>$ \mbox{\hyperlink{class_elevator_af12cb808503563d585d4851f341b5164}{Get\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Getting function which returns the status of an \mbox{\hyperlink{class_elevator}{Elevator}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_elevator_a78899803925c5f62c67c911c9416f0ca}{Set\+Pickup\+Goal}} (int pickup\+\_\+floor, int goal\+\_\+floor)
+\begin{DoxyCompactList}\small\item\em Function which inserts pickup floor and goal floor into requests sets. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_elevator_afc40bd3ded42a639e8dc7a4f1827feea}{Set\+Current\+Goal}} (int current\+\_\+floor, std\+::set$<$ int $>$ up\+\_\+requests, std\+::set$<$ int, std\+::greater$<$ int $>$$>$ down\+\_\+requests)
+\begin{DoxyCompactList}\small\item\em Setting function which sets the current floor and requests for an \mbox{\hyperlink{class_elevator}{Elevator}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_elevator_a3d253407ad2eae654d8fb5882b237ae4}{Is\+Idle}} ()
+\begin{DoxyCompactList}\small\item\em Boolean function which check if an \mbox{\hyperlink{class_elevator}{Elevator}} is idle. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_elevator_aca2748809b28064bd231bdd1d41da2c8}{Is\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Boolean function which check if an \mbox{\hyperlink{class_elevator}{Elevator}} is going up. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_elevator_abc793c3aa503a743c3f1e1245f10d68b}{Is\+Down}} ()
+\begin{DoxyCompactList}\small\item\em Boolean function which check if an \mbox{\hyperlink{class_elevator}{Elevator}} is going down. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_elevator_afb9234ed92da547473353a8c95e64d4a}{Get\+Current\+Floor}} ()
+\begin{DoxyCompactList}\small\item\em Getting function which returns the current floor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_elevator_a154bb4651ee4733f6d887d3f9cceb034}{Set\+State}} (State state)
+\begin{DoxyCompactList}\small\item\em Setting function which sets the state of an \mbox{\hyperlink{class_elevator}{Elevator}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_elevator_ad64cda564f69dccdcc72385172f79923}\label{class_elevator_ad64cda564f69dccdcc72385172f79923}} 
+void \mbox{\hyperlink{class_elevator_ad64cda564f69dccdcc72385172f79923}{Move}} ()
+\begin{DoxyCompactList}\small\item\em Function which perform one step for all Elevators in simulation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_elevator_aa8a3857a468b3903c6f72032dd73c302}\label{class_elevator_aa8a3857a468b3903c6f72032dd73c302}} 
+\index{Elevator@{Elevator}!Elevator@{Elevator}}
+\index{Elevator@{Elevator}!Elevator@{Elevator}}
+\subsubsection{\texorpdfstring{Elevator()}{Elevator()}}
+{\footnotesize\ttfamily Elevator\+::\+Elevator (\begin{DoxyParamCaption}\item[{int}]{elevator\+\_\+id,  }\item[{int}]{story\+\_\+number }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{class_elevator}{Elevator}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em elevator\+\_\+id} & ID of an \mbox{\hyperlink{class_elevator}{Elevator}} \\
+\hline
+{\em story\+\_\+number} & Number of stories in the building \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_elevator_afb9234ed92da547473353a8c95e64d4a}\label{class_elevator_afb9234ed92da547473353a8c95e64d4a}} 
+\index{Elevator@{Elevator}!Get\+Current\+Floor@{Get\+Current\+Floor}}
+\index{Get\+Current\+Floor@{Get\+Current\+Floor}!Elevator@{Elevator}}
+\subsubsection{\texorpdfstring{Get\+Current\+Floor()}{GetCurrentFloor()}}
+{\footnotesize\ttfamily int Elevator\+::\+Get\+Current\+Floor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getting function which returns the current floor. 
+
+\begin{DoxyReturn}{Returns}
+int Current floor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_elevator_af12cb808503563d585d4851f341b5164}\label{class_elevator_af12cb808503563d585d4851f341b5164}} 
+\index{Elevator@{Elevator}!Get\+Status@{Get\+Status}}
+\index{Get\+Status@{Get\+Status}!Elevator@{Elevator}}
+\subsubsection{\texorpdfstring{Get\+Status()}{GetStatus()}}
+{\footnotesize\ttfamily std\+::tuple$<$ int, int, std\+::set$<$ int $>$, std\+::set$<$ int, std\+::greater$<$ int $>$ $>$ $>$ Elevator\+::\+Get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getting function which returns the status of an \mbox{\hyperlink{class_elevator}{Elevator}}. 
+
+\begin{DoxyReturn}{Returns}
+std\+::tuple$<$int, int, std\+::set$<$int$>$, std\+::set$<$int, std\+::greater$<$int$>$$>$$>$ Status of an \mbox{\hyperlink{class_elevator}{Elevator}} in a tuple\+: $<$ID, current floor, up requests, down requests$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_elevator_abc793c3aa503a743c3f1e1245f10d68b}\label{class_elevator_abc793c3aa503a743c3f1e1245f10d68b}} 
+\index{Elevator@{Elevator}!Is\+Down@{Is\+Down}}
+\index{Is\+Down@{Is\+Down}!Elevator@{Elevator}}
+\subsubsection{\texorpdfstring{Is\+Down()}{IsDown()}}
+{\footnotesize\ttfamily bool Elevator\+::\+Is\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Boolean function which check if an \mbox{\hyperlink{class_elevator}{Elevator}} is going down. 
+
+\begin{DoxyReturn}{Returns}
+true \mbox{\hyperlink{class_elevator}{Elevator}} goes down 
+
+false \mbox{\hyperlink{class_elevator}{Elevator}} doesn\textquotesingle{}t go down 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_elevator_a3d253407ad2eae654d8fb5882b237ae4}\label{class_elevator_a3d253407ad2eae654d8fb5882b237ae4}} 
+\index{Elevator@{Elevator}!Is\+Idle@{Is\+Idle}}
+\index{Is\+Idle@{Is\+Idle}!Elevator@{Elevator}}
+\subsubsection{\texorpdfstring{Is\+Idle()}{IsIdle()}}
+{\footnotesize\ttfamily bool Elevator\+::\+Is\+Idle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Boolean function which check if an \mbox{\hyperlink{class_elevator}{Elevator}} is idle. 
+
+\begin{DoxyReturn}{Returns}
+true \mbox{\hyperlink{class_elevator}{Elevator}} is idle 
+
+false \mbox{\hyperlink{class_elevator}{Elevator}} is not idle 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_elevator_aca2748809b28064bd231bdd1d41da2c8}\label{class_elevator_aca2748809b28064bd231bdd1d41da2c8}} 
+\index{Elevator@{Elevator}!Is\+Up@{Is\+Up}}
+\index{Is\+Up@{Is\+Up}!Elevator@{Elevator}}
+\subsubsection{\texorpdfstring{Is\+Up()}{IsUp()}}
+{\footnotesize\ttfamily bool Elevator\+::\+Is\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Boolean function which check if an \mbox{\hyperlink{class_elevator}{Elevator}} is going up. 
+
+\begin{DoxyReturn}{Returns}
+true \mbox{\hyperlink{class_elevator}{Elevator}} goes up 
+
+false \mbox{\hyperlink{class_elevator}{Elevator}} doesn\textquotesingle{}t go up 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_elevator_afc40bd3ded42a639e8dc7a4f1827feea}\label{class_elevator_afc40bd3ded42a639e8dc7a4f1827feea}} 
+\index{Elevator@{Elevator}!Set\+Current\+Goal@{Set\+Current\+Goal}}
+\index{Set\+Current\+Goal@{Set\+Current\+Goal}!Elevator@{Elevator}}
+\subsubsection{\texorpdfstring{Set\+Current\+Goal()}{SetCurrentGoal()}}
+{\footnotesize\ttfamily void Elevator\+::\+Set\+Current\+Goal (\begin{DoxyParamCaption}\item[{int}]{current\+\_\+floor,  }\item[{std\+::set$<$ int $>$}]{up\+\_\+requests,  }\item[{std\+::set$<$ int, std\+::greater$<$ int $>$$>$}]{down\+\_\+requests }\end{DoxyParamCaption})}
+
+
+
+Setting function which sets the current floor and requests for an \mbox{\hyperlink{class_elevator}{Elevator}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+\_\+floor} & Current floor \\
+\hline
+{\em up\+\_\+requests} & Requests for going up \\
+\hline
+{\em down\+\_\+requests} & Requests for going down \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_elevator_a78899803925c5f62c67c911c9416f0ca}\label{class_elevator_a78899803925c5f62c67c911c9416f0ca}} 
+\index{Elevator@{Elevator}!Set\+Pickup\+Goal@{Set\+Pickup\+Goal}}
+\index{Set\+Pickup\+Goal@{Set\+Pickup\+Goal}!Elevator@{Elevator}}
+\subsubsection{\texorpdfstring{Set\+Pickup\+Goal()}{SetPickupGoal()}}
+{\footnotesize\ttfamily void Elevator\+::\+Set\+Pickup\+Goal (\begin{DoxyParamCaption}\item[{int}]{pickup\+\_\+floor,  }\item[{int}]{goal\+\_\+floor }\end{DoxyParamCaption})}
+
+
+
+Function which inserts pickup floor and goal floor into requests sets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pickup\+\_\+floor} & pickup floor to be inserted \\
+\hline
+{\em goal\+\_\+floor} & goal floor to be inserted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_elevator_a154bb4651ee4733f6d887d3f9cceb034}\label{class_elevator_a154bb4651ee4733f6d887d3f9cceb034}} 
+\index{Elevator@{Elevator}!Set\+State@{Set\+State}}
+\index{Set\+State@{Set\+State}!Elevator@{Elevator}}
+\subsubsection{\texorpdfstring{Set\+State()}{SetState()}}
+{\footnotesize\ttfamily void Elevator\+::\+Set\+State (\begin{DoxyParamCaption}\item[{State}]{state }\end{DoxyParamCaption})}
+
+
+
+Setting function which sets the state of an \mbox{\hyperlink{class_elevator}{Elevator}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & State of an \mbox{\hyperlink{class_elevator}{Elevator}} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_elevator_8h}{Elevator.\+h}}\item 
+\mbox{\hyperlink{_elevator_8cc}{Elevator.\+cc}}\end{DoxyCompactItemize}

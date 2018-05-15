@@ -1,0 +1,96 @@
+\hypertarget{class_simulation}{}\section{Simulation Class Reference}
+\label{class_simulation}\index{Simulation@{Simulation}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_simulation_aa4160c22753211031194702166b1a516}{Simulation}} (int elevator\+\_\+number, int story\+\_\+number)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_simulation}{Simulation}}. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::tuple$<$ int, int, std\+::set$<$ int $>$, std\+::set$<$ int, std\+::greater$<$ int $>$ $>$ $>$ $>$ \mbox{\hyperlink{class_simulation_ae9f27ebb878f4c590c73b27539b88a42}{Status}} ()
+\begin{DoxyCompactList}\small\item\em Function which returns the status of Elevators in simulation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simulation_a65090d6b0a47565ba57c21f96c48b930}{Update}} (int elevator\+\_\+id, int current\+\_\+floor, std\+::set$<$ int $>$ up\+\_\+requests, std\+::set$<$ int, std\+::greater$<$ int $>$$>$ down\+\_\+requests)
+\begin{DoxyCompactList}\small\item\em Function which updates information about an \mbox{\hyperlink{class_elevator}{Elevator}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simulation_a2b5b39a02fcde98b0e7b3f10c3f2703a}{Pickup}} (int pickup\+\_\+floor, int goal\+\_\+floor)
+\begin{DoxyCompactList}\small\item\em Function which picks up passengers in simulation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_ab53def8471d4b5bce6bade102f5a1dec}\label{class_simulation_ab53def8471d4b5bce6bade102f5a1dec}} 
+void \mbox{\hyperlink{class_simulation_ab53def8471d4b5bce6bade102f5a1dec}{Step}} ()
+\begin{DoxyCompactList}\small\item\em Function which performs one moving step for simulation system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_simulation_aa4160c22753211031194702166b1a516}\label{class_simulation_aa4160c22753211031194702166b1a516}} 
+\index{Simulation@{Simulation}!Simulation@{Simulation}}
+\index{Simulation@{Simulation}!Simulation@{Simulation}}
+\subsubsection{\texorpdfstring{Simulation()}{Simulation()}}
+{\footnotesize\ttfamily Simulation\+::\+Simulation (\begin{DoxyParamCaption}\item[{int}]{elevator\+\_\+number,  }\item[{int}]{story\+\_\+number }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{class_simulation}{Simulation}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em elevator\+\_\+number} & Number of Elevators in simulation \\
+\hline
+{\em story\+\_\+number} & Number of stories in the building \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_simulation_a2b5b39a02fcde98b0e7b3f10c3f2703a}\label{class_simulation_a2b5b39a02fcde98b0e7b3f10c3f2703a}} 
+\index{Simulation@{Simulation}!Pickup@{Pickup}}
+\index{Pickup@{Pickup}!Simulation@{Simulation}}
+\subsubsection{\texorpdfstring{Pickup()}{Pickup()}}
+{\footnotesize\ttfamily void Simulation\+::\+Pickup (\begin{DoxyParamCaption}\item[{int}]{pickup\+\_\+floor,  }\item[{int}]{goal\+\_\+floor }\end{DoxyParamCaption})}
+
+
+
+Function which picks up passengers in simulation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pickup\+\_\+floor} & Pickup floor \\
+\hline
+{\em goal\+\_\+floor} & Goal floor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_simulation_ae9f27ebb878f4c590c73b27539b88a42}\label{class_simulation_ae9f27ebb878f4c590c73b27539b88a42}} 
+\index{Simulation@{Simulation}!Status@{Status}}
+\index{Status@{Status}!Simulation@{Simulation}}
+\subsubsection{\texorpdfstring{Status()}{Status()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::tuple$<$ int, int, std\+::set$<$ int $>$, std\+::set$<$ int, std\+::greater$<$ int $>$ $>$ $>$ $>$ Simulation\+::\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function which returns the status of Elevators in simulation. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$std\+::tuple$<$int, int, std\+::set$<$int$>$, std\+::set$<$int, std\+::greater$<$int$>$$>$$>$$>$ Vector of status of Elevators 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_simulation_a65090d6b0a47565ba57c21f96c48b930}\label{class_simulation_a65090d6b0a47565ba57c21f96c48b930}} 
+\index{Simulation@{Simulation}!Update@{Update}}
+\index{Update@{Update}!Simulation@{Simulation}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Simulation\+::\+Update (\begin{DoxyParamCaption}\item[{int}]{elevator\+\_\+id,  }\item[{int}]{current\+\_\+floor,  }\item[{std\+::set$<$ int $>$}]{up\+\_\+requests,  }\item[{std\+::set$<$ int, std\+::greater$<$ int $>$$>$}]{down\+\_\+requests }\end{DoxyParamCaption})}
+
+
+
+Function which updates information about an \mbox{\hyperlink{class_elevator}{Elevator}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em elevator\+\_\+id} & ID \\
+\hline
+{\em current\+\_\+floor} & Current floor \\
+\hline
+{\em up\+\_\+requests} & Requests for going up \\
+\hline
+{\em down\+\_\+requests} & Requests for going down \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_simulation_8h}{Simulation.\+h}}\item 
+\mbox{\hyperlink{_simulation_8cc}{Simulation.\+cc}}\end{DoxyCompactItemize}
